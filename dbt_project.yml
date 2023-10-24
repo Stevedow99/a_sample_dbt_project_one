@@ -21,8 +21,8 @@ clean-targets:
 
 vars:
 
-  salesforce_database_name:
-  salesforce_schema_name:
+  salesforce_database_name: steve_d_raw_data
+  salesforce_schema_name: sample_salesforce_data
   salesforce_opportunites_table_name:
   salesforce_accounts_table_name:
   salesforce_contacts_table_name:
