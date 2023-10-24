@@ -4,7 +4,7 @@ version: 2
 sources:
   - name: salesforce_data
     description: sample salesforce data
-    database: steve_d_raw_data
+    database: "{{ var('salesforce_database_name', 'steve_d_raw_data') }}"
     schema: sample_salesforce_data
     tables:
       - name: accounts
