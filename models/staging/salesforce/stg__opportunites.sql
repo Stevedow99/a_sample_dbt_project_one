@@ -1,7 +1,7 @@
 
 with source as (
 
-    select * from {{ source('sample_salesforce_data', 'opportunites') }}
+    select * from {{ source('salesforce_data', 'opportunites') }}
 
 ),
 
@@ -9,7 +9,7 @@ renamed as (
 
     select
         batchid,
-        companextid as COMPANYEXTID,
+        companextid as companyextid,
         amount,
         project_name,
         oppurtunity_name,

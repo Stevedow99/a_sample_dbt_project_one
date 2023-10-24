@@ -1,7 +1,7 @@
 
 with source as (
 
-    select * from {{ source('sample_salesforce_data', 'contacts') }}
+    select * from {{ source('salesforce_data', 'contacts') }}
 
 ),
 

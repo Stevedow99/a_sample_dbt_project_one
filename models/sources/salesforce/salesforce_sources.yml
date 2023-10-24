@@ -2,20 +2,24 @@ version: 2
 
 
 sources:
-  - name: sample_salesforce_data
+  - name: salesforce_data
     description: sample salesforce data
-    database: steve_d_raw_data
-    schema: sample_salesforce_data
-    tables:
+    database: "{{ var('salesforce_database_name') }}"
+    schema: "{{ var('salesforce_schema_name') }}"
+    tables: 
       - name: accounts
+        identifier: "{{ var('salesforce_accounts_table_name') }}"
         description: all company accounts
           
       - name: contacts
+        identifier: "{{ var('salesforce_contacts_table_name') }}"
         description: all company contacts
 
       - name: leads
+        identifier: "{{ var('salesforce_leads_table_name') }}"
         description: company leads
 
       - name: opportunites
+        identifier: "{{ var('salesforce_opportunites_table_name') }}"
         description: company opportunites
         
