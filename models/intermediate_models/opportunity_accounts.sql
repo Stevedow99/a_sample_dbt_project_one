@@ -15,7 +15,7 @@ accounts as (
 
 Select 
     o.oppurtunityid as opportunity_id,
-    o.companextid as account_id,
+    o.companyextid as account_id,
     a.company_name,
     a.state as company_state,
     a.city as company_city,
@@ -26,5 +26,5 @@ Select
     o.close_date as opportunity_close_date
 from opportunites o 
     left join accounts a 
-        on o.companextid = a.companextid
+        on o.companyextid = a.companyextid
     

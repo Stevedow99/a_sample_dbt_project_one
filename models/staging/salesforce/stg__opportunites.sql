@@ -9,7 +9,7 @@ renamed as (
 
     select
         batchid,
-        companextid as COMPANYEXTID,
+        companextid as companyextid,
         amount,
         project_name,
         oppurtunity_name,
