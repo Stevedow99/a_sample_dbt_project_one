@@ -2,7 +2,7 @@ version: 2
 
 
 sources:
-  - name: sample_salesforce_data
+  - name: salesforce_data
     description: sample salesforce data
     database: steve_d_raw_data
     schema: sample_salesforce_data
